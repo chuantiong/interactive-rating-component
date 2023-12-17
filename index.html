@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Frontend Mentor | Interactive rating component</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<!-- CSS Stylesheet -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Rating state start -->
+		<div class="component rating-container" id="rating-component">
+			<div class="component__star-icon-wrapper">
+				<img class="component__star-icon" src="./images/icon-star.svg" alt="" />
+			</div>
+			<h1 class="component__title component__title--hdwd">How did we do?</h1>
+			<p class="component__description">
+				Please let us know how we did with your support request. All feedback is
+				appreciated to help us improve our offering!
+			</p>
+			<form id="rating-form">
+				<ul class="component__ratings-container" id="ratings-container">
+					<!-- Ratings -->
+				</ul>
+				<button class="btn" type="submit">submit</button>
+			</form>
+		</div>
+
+		<!-- Rating state end -->
+
+		<!-- Thank you state start -->
+
+		<div class="component thank-you-container hide" id="ty-component">
+			<img
+				class="component__image"
+				src="./images/illustration-thank-you.svg"
+				alt=""
+			/>
+			<div class="component__selected-ratings">
+				You selected
+				<span id="selected-ratings">
+					<!-- selected ratings -->
+				</span>
+				out of 5
+			</div>
+			<h1 class="component__title component__title--ty">Thank you!</h1>
+			<p class="component__description">
+				We appreciate you taking the time to give a rating. If you ever need
+				more support, don’t hesitate to get in touch!
+			</p>
+		</div>
+
+		<!-- Thank you state end -->
+
+		<!-- Attribution -->
+		<footer class="footer">
+			<p class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://github.com/chuantiong">Alvin Tiong</a>.
+			</p>
+		</footer>
+		<script src="index.js"></script>
+	</body>
+</html>
